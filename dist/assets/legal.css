@@ -20,3 +20,5 @@ ul{padding-left:22px}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.86rem}
 .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
 @media(max-width:560px){main{padding:50px 0 70px}.brand img{width:118px;height:44px}.card{padding:20px}}
+
+.brand img{width:90px;height:90px;object-fit:contain;border-radius:0}h1{overflow-wrap:anywhere}@media(max-width:560px){.brand img{width:76px;height:76px}}
