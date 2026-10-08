@@ -44,7 +44,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/updates.css?v=20261008-6">
+<link rel="stylesheet" href="assets/updates.css?v=20261008-7">
 </head>
 <body>
   <header><div class="shell nav"><a class="brand" href="#top"><img src="assets/logo-natali-20261008.jpg" alt="Логотип Natali Lash"><span>NATALI LASH</span></a><nav class="navlinks" aria-label="Основная навигация"><a href="#about">О мастере</a><a href="#works">Работы</a><a href="#prices">Прайс</a><a href="#catalog">Ресницы</a><a href="#reviews">Отзывы</a><a href="#promotions">Акции</a><a href="#contacts">Контакты</a></nav><a class="btn" href="#online-booking">Записаться</a></div></header>
@@ -84,7 +84,7 @@
 
     <section class="online-booking" id="online-booking" aria-labelledby="online-booking-title"><div class="shell">
 <div class="booking-intro"><div class="eyebrow">Онлайн-запись</div><h2 id="online-booking-title">Выберите время<br>для нового взгляда</h2><p>Выберите дату и свободное время, затем заполните форму записи. Для процедуры выделяется 3 часа.</p><p class="booking-note">Календарь показывает время в выбранном часовом поясе. Для Воронежа выберите Europe/Moscow.</p></div>
-<form class="consent-form" id="booking-consents"><fieldset><legend>Перед онлайн-записью</legend>
+<form class="consent-form" id="booking-consents"><fieldset><legend>Вы уже были у Наталии?</legend><div class="client-options"><label><input type="radio" name="client-status" value="new" checked required> Первый визит</label><label><input type="radio" name="client-status" value="returning"> Уже была у Наталии</label></div></fieldset><fieldset><legend>Согласия перед записью</legend>
   <label class="consent-row"><input type="checkbox" id="consent-personal" name="personal" required><span>Я даю Клименко Наталии Юрьевне, ИНН 480402314915, <a href="consent.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> для записи и связи по моей заявке.</span></label>
   <label class="consent-row"><input type="checkbox" id="consent-marketing" name="marketing"><span>Я хочу получать сообщения об акциях и предложениях Natali Lash и даю <a href="marketing-consent.html" target="_blank" rel="noopener">согласие на рекламную рассылку</a> от Клименко Наталии Юрьевны. Необязательно.</span></label>
   </fieldset><p class="fine">Реклама — только по вашему выбору. Отказ не влияет на возможность записаться. С <a href="rules.html">правилами визита</a> и <a href="privacy.html">политикой обработки данных</a> можно ознакомиться отдельно.</p><button class="btn primary" type="submit" id="open-booking" disabled>Перейти к выбору времени</button></form>
@@ -117,6 +117,6 @@ document.addEventListener('keydown',e=>{if(view.open&&imageIndex>=0&&(e.key==='A
 view.querySelector('.close-view').onclick=()=>view.close();view.addEventListener('click',e=>{if(e.target===view)view.close()});
 </script>
 <script src="gallery.js"></script>
-<script src="booking.js?v=20261008-6"></script>
+<script src="booking.js?v=20261008-7"></script>
 </body>
 </html>

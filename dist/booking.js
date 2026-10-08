@@ -55,10 +55,14 @@
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!personal.checked || !form.reportValidity()) return;
+    const clientStatus = form.querySelector('[name="client-status"]:checked').value;
+    const clientLabel = clientStatus === 'new' ? 'Первый визит' : 'Повторный визит';
     const selectedAt = new Date().toISOString();
     const namespace = `nataliLash${++attempt}`;
     const config = {
       layout: 'month_view', theme: 'light', locale: 'ru',
+      notes: clientLabel,
+      'metadata[clientStatus]': clientStatus,
       'metadata[personalDataConsent]': 'accepted',
       'metadata[personalDataConsentVersion]': '2026-10-08',
       'metadata[consentSelectedAt]': selectedAt,
@@ -66,11 +70,11 @@
       'metadata[marketingConsentVersion]': '2026-10-08'
     };
     const url = new URL(originalUrl);
-    Object.entries(config).filter(([key]) => key.startsWith('metadata['))
+    Object.entries(config).filter(([key]) => key.startsWith('metadata[') || key === 'notes')
       .forEach(([key, value]) => url.searchParams.set(key, value));
     externalLink.href = url.href;
     form.hidden = true;
-    summaryText.textContent = `Обработка данных для записи: согласие дано. Рекламные сообщения: ${marketing.checked ? 'согласие дано' : 'согласие не дано'}.`;
+    summaryText.textContent = `${clientLabel}. Обработка данных для записи: согласие дано. Рекламные сообщения: ${marketing.checked ? 'согласие дано' : 'согласие не дано'}.`;
     summary.hidden = false;
     calendar.hidden = false;
     fallback.hidden = false;
