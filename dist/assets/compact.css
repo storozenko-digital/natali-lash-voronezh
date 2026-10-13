@@ -18,3 +18,5 @@ section,.rules-preview{padding:42px 0}.shell{width:min(1120px,calc(100% - 40px))
 .book-controls output{min-width:65px;font-size:.82rem}.book-controls button{padding:8px 12px}
 
 header .brand span{display:inline;color:var(--ink)}
+
+.intro-visuals{grid-template-columns:1fr}.telegram-pending{min-height:38px;padding:0 14px;font-size:.84rem}@media(max-width:560px){.intro-visuals{grid-template-columns:1fr;max-width:320px}}
