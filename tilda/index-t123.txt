@@ -506,6 +506,7 @@
 #natali-tilda-index .book-image-inner.neon-sample{display:block;position:relative;overflow:hidden;width:min(100%,240px);height:auto;aspect-ratio:1}
 @media(max-width:850px){#natali-tilda-index .book-image-inner.neon-sample{width:min(100%,290px)}}
 @media(max-width:560px){#natali-tilda-index .book-image-inner.neon-sample{width:min(100%,260px)}}
+#natali-tilda-index #review-book .book-page .book-image img{height:100%}
 
 
 </style>

@@ -31,3 +31,5 @@ header .brand span{display:inline;color:var(--ink)}
 .book-image{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;height:240px;width:100%;background:#fffafc}.books-row .book-page .book-image img{height:100%;width:100%;object-fit:contain}.books-row .book-page .neon-sample img{position:absolute;max-width:none;width:116%;height:auto;left:-10%;top:-42%;object-fit:initial}.books-row .book-page figcaption{color:var(--muted);font-size:.75rem}.books-row .book-wrap{margin-top:24px}.books-row h2{min-height:2.24em}.books-row section p{margin-top:10px;margin-bottom:0}@media(max-width:850px){.book-image{height:290px}.books-row h2{min-height:0}}@media(max-width:560px){.book-image{height:260px}}
 
 .book-image-inner{display:flex;align-items:center;justify-content:center;width:100%;height:100%}.book-image-inner.neon-sample{display:block;position:relative;overflow:hidden;width:min(100%,240px);height:auto;aspect-ratio:1}@media(max-width:850px){.book-image-inner.neon-sample{width:min(100%,290px)}}@media(max-width:560px){.book-image-inner.neon-sample{width:min(100%,260px)}}
+
+#review-book .book-page .book-image img{height:100%}
