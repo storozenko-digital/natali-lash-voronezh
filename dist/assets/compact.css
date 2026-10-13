@@ -22,6 +22,6 @@ header .brand span{display:inline;color:var(--ink)}
 .intro-visuals{grid-template-columns:1fr}.telegram-pending{min-height:38px;padding:0 14px;font-size:.84rem}@media(max-width:560px){.intro-visuals{grid-template-columns:1fr;max-width:320px}}
 
 /* Three offers share a row; narrow screens scroll horizontally. */
-.compact-promos{grid-template-columns:repeat(3,minmax(0,1fr))}.telegram-link{min-height:38px;padding:0 14px;font-size:.84rem}
+.compact-promos{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:560px){.compact-promos{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:85%;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:12px}.compact-promos .promo-card{min-width:0;scroll-snap-align:start}.promo-scroll-hint{font-size:.8rem;color:var(--muted);margin:10px 0 0}}
 @media(min-width:561px){.promo-scroll-hint{display:none}}
