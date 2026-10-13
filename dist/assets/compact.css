@@ -16,3 +16,5 @@ section,.rules-preview{padding:42px 0}.shell{width:min(1120px,calc(100% - 40px))
 .hero-copy p{margin:12px 0}.booking-intro{margin-bottom:18px}.booking-intro h2{font-size:clamp(1.65rem,2.7vw,2.3rem)}@media(max-width:560px){.portfolio-head{display:block}.portfolio-head p{margin-top:12px}.booking-intro h2{font-size:1.85rem}}
 
 .book-controls output{min-width:65px;font-size:.82rem}.book-controls button{padding:8px 12px}
+
+header .brand span{display:inline;color:var(--ink)}
