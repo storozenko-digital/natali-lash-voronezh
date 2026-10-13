@@ -1,0 +1,735 @@
+<style>
+#natali-tilda-index{position:relative;isolation:isolate;text-align:left}
+#natali-tilda-index p{margin:1em 0}
+#natali-tilda-index{--ink:#181117;--paper:#fffafc;--pink:#e765a4;--pink-deep:#bf3d7d;--blush:#fbe5f0;--muted:#736872;--line:rgba(24,17,23,.12);--shadow:0 24px 70px rgba(54,24,45,.14)}
+#natali-tilda-index,#natali-tilda-index *{box-sizing:border-box}
+#natali-tilda-index{scroll-behavior:smooth}
+#natali-tilda-index{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif;overflow-x:hidden}
+#natali-tilda-index a{color:inherit}
+#natali-tilda-index img{display:block;max-width:100%}
+#natali-tilda-index .shell{width:min(1180px,calc(100% - 40px));margin:auto}
+#natali-tilda-index .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:700;color:var(--pink-deep)}
+#natali-tilda-index h1,#natali-tilda-index h2,#natali-tilda-index h3{font-family:Georgia,"Times New Roman",serif;line-height:.96;margin:0}
+#natali-tilda-index h1{font-size:clamp(4rem,9vw,7.7rem);letter-spacing:-.055em}
+#natali-tilda-index h2{font-size:clamp(2.8rem,6vw,5rem);letter-spacing:-.035em}
+#natali-tilda-index h3{font-size:2rem}
+#natali-tilda-index .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-weight:700;transition:.22s ease;cursor:pointer;background:transparent}
+#natali-tilda-index .btn.primary{background:var(--ink);color:#fff}
+#natali-tilda-index .btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(24,17,23,.14)}
+#natali-tilda-index .btn.primary:hover{background:var(--pink-deep);border-color:var(--pink-deep)}
+#natali-tilda-index header{position:absolute;z-index:5;left:0;right:0;top:0;padding:22px 0}
+#natali-tilda-index .nav{display:flex;align-items:center;justify-content:space-between}
+#natali-tilda-index .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:.04em}
+#natali-tilda-index .brand img{width:156px;height:54px;object-fit:cover;object-position:center;border-radius:7px}
+#natali-tilda-index .brand span{display:none}
+#natali-tilda-index .navlinks{display:flex;gap:28px;align-items:center}
+#natali-tilda-index .navlinks a{text-decoration:none;font-size:.9rem;font-weight:600}
+#natali-tilda-index .menu-btn{display:none;border:0;background:none;font:inherit;font-weight:700}
+#natali-tilda-index .hero{min-height:760px;padding:150px 0 80px;display:grid;align-items:center;position:relative;background:radial-gradient(circle at 73% 17%,#f8cde2 0,rgba(248,205,226,.7) 17%,transparent 39%),linear-gradient(135deg,#fff 0%,#fff5fa 58%,#fbe0ed 100%)}
+#natali-tilda-index .hero:after{content:"";position:absolute;inset:auto -12vw -250px auto;width:550px;height:550px;border:1px solid rgba(231,101,164,.24);border-radius:50%}
+#natali-tilda-index .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:68px;align-items:center}
+#natali-tilda-index .hero-copy p{max-width:580px;font-size:1.08rem;color:var(--muted);margin:28px 0}
+#natali-tilda-index .hero-copy .script{font-family:"Cormorant Garamond",serif;font-size:1.7rem;font-style:italic;color:var(--pink-deep);margin-bottom:10px}
+#natali-tilda-index .actions{display:flex;flex-wrap:wrap;gap:12px}
+#natali-tilda-index .hero-photo{position:relative}
+#natali-tilda-index .hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 28px 28px;box-shadow:var(--shadow)}
+#natali-tilda-index .hero-card{position:absolute;left:-46px;bottom:36px;padding:18px 21px;border-radius:20px;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);box-shadow:var(--shadow);max-width:230px}
+#natali-tilda-index .hero-card strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.45rem}
+#natali-tilda-index .hero-card span{font-size:.82rem;color:var(--muted)}
+#natali-tilda-index section{padding:110px 0}
+#natali-tilda-index .intro{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:start}
+#natali-tilda-index .intro p{font-size:1.12rem;margin:0;color:var(--muted);max-width:700px}
+#natali-tilda-index .perks{margin-top:35px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+#natali-tilda-index .perk{padding:22px;border-top:1px solid var(--ink)}
+#natali-tilda-index .perk b{font-family:"Cormorant Garamond",serif;font-size:1.45rem;display:block}
+#natali-tilda-index .perk span{font-size:.86rem;color:var(--muted)}
+#natali-tilda-index .portfolio{background:var(--ink);color:white;overflow:hidden}
+#natali-tilda-index .portfolio-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:46px}
+#natali-tilda-index .portfolio-head p{max-width:420px;color:#cbbec8;margin:0}
+#natali-tilda-index .gallery{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:290px 290px;gap:16px}
+#natali-tilda-index .shot{overflow:hidden;border-radius:22px;position:relative}
+#natali-tilda-index .shot:first-child{grid-row:1/3}
+#natali-tilda-index .shot img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+#natali-tilda-index .shot:hover img{transform:scale(1.045)}
+#natali-tilda-index .shot:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.18))}
+#natali-tilda-index .prices-head{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;margin-bottom:45px}
+#natali-tilda-index .prices-head p{margin:0;color:var(--muted)}
+#natali-tilda-index .price-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+#natali-tilda-index .price-list,#natali-tilda-index .price-note{background:#fff;border:1px solid var(--line);border-radius:26px;padding:34px;box-shadow:0 14px 50px rgba(58,28,47,.06)}
+#natali-tilda-index .price-row{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+#natali-tilda-index .price-row:last-child{border-bottom:0}
+#natali-tilda-index .price-row strong{font-size:1.05rem}
+#natali-tilda-index .price-row span{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:600;white-space:nowrap}
+#natali-tilda-index .price-note{background:var(--blush);border:0}
+#natali-tilda-index .price-note h3{margin-bottom:20px}
+#natali-tilda-index .price-note ul{padding:0;margin:0;list-style:none}
+#natali-tilda-index .price-note li{padding:12px 0;border-bottom:1px solid rgba(24,17,23,.1)}
+#natali-tilda-index .price-note li:last-child{border:0}
+#natali-tilda-index .fine{font-size:.82rem;color:var(--muted);margin:20px 0 0}
+#natali-tilda-index .space{background:#f4edf1}
+#natali-tilda-index .space-grid{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center}
+#natali-tilda-index .studio-visuals{position:relative;padding:0 72px 74px 0}
+#natali-tilda-index .studio-visuals .upright{width:82%;border-radius:220px 220px 28px 28px;box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover}
+#natali-tilda-index .studio-visuals .reclined{position:absolute;width:74%;right:0;bottom:0;border:8px solid #f4edf1;border-radius:24px;box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
+#natali-tilda-index .space p{color:var(--muted)}
+#natali-tilda-index .feature-list{display:grid;gap:17px;margin:30px 0}
+#natali-tilda-index .feature{display:flex;gap:14px;align-items:flex-start}
+#natali-tilda-index .dot{width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:var(--pink);color:white;display:grid;place-items:center;font-size:.8rem}
+#natali-tilda-index .feature strong{display:block}
+#natali-tilda-index .feature span{color:var(--muted);font-size:.9rem}
+#natali-tilda-index .location-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:50px;align-items:center}
+#natali-tilda-index .location-card{padding:38px;background:var(--ink);color:white;border-radius:28px}
+#natali-tilda-index .location-card p{color:#cbbec8}
+#natali-tilda-index .address{font-family:"Cormorant Garamond",serif;font-size:2rem;line-height:1.1;margin:25px 0}
+#natali-tilda-index .map{border-radius:28px;overflow:hidden;border:1px solid var(--line);background:white}
+#natali-tilda-index .map img{width:100%;aspect-ratio:16/10;object-fit:cover}
+#natali-tilda-index .map-note{padding:15px 20px;font-size:.84rem;color:var(--muted)}
+#natali-tilda-index .cta{padding-top:30px}
+#natali-tilda-index .cta-box{border-radius:34px;padding:70px;background:linear-gradient(135deg,#d84f92,#9d235f);color:white;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+#natali-tilda-index .cta-box:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.3);border-radius:50%;right:-70px;top:-100px}
+#natali-tilda-index .cta-box p{max-width:600px;color:#ffe8f4}
+#natali-tilda-index .cta-links{display:grid;gap:10px;position:relative;z-index:2}
+#natali-tilda-index .cta-links .btn{background:#fff;border-color:#fff;color:var(--ink)}
+#natali-tilda-index .cta-links .btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+#natali-tilda-index footer{padding:40px 0}
+#natali-tilda-index .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:.85rem}
+#natali-tilda-index .foot a{text-decoration:none}
+#natali-tilda-index .foot-links{display:flex;flex-wrap:wrap;gap:12px 20px}
+#natali-tilda-index .foot-links a{text-decoration:underline;text-underline-offset:3px}
+#natali-tilda-index .mobile-bar{display:none}
+#natali-tilda-index [data-reveal]{opacity:0;transform:translateY(22px);transition:.7s ease}
+#natali-tilda-index [data-reveal].show{opacity:1;transform:none}
+@media(max-width:850px){#natali-tilda-index .shell{width:min(100% - 28px,680px)}
+#natali-tilda-index .navlinks{display:none}
+#natali-tilda-index .menu-btn{display:block}
+#natali-tilda-index .hero{padding-top:120px}
+#natali-tilda-index .hero-grid,#natali-tilda-index .intro,#natali-tilda-index .prices-head,#natali-tilda-index .price-grid,#natali-tilda-index .space-grid,#natali-tilda-index .location-grid,#natali-tilda-index .cta-box{grid-template-columns:1fr}
+#natali-tilda-index .hero-grid{gap:42px}
+#natali-tilda-index .hero-photo{max-width:560px}
+#natali-tilda-index .hero-card{left:12px}
+#natali-tilda-index .intro{gap:22px}
+#natali-tilda-index .perks{grid-template-columns:1fr}
+#natali-tilda-index .gallery{grid-template-columns:1fr 1fr;grid-template-rows:360px 220px 220px}
+#natali-tilda-index .shot:first-child{grid-column:1/3;grid-row:auto}
+#natali-tilda-index .portfolio-head{align-items:start;flex-direction:column}
+#natali-tilda-index .cta-box{padding:42px 26px}
+#natali-tilda-index section{padding:78px 0}}
+@media(max-width:560px){#natali-tilda-index{padding-bottom:74px}
+#natali-tilda-index h1{font-size:3.6rem}
+#natali-tilda-index .brand img{width:118px;height:44px}
+#natali-tilda-index .nav>.btn{min-height:44px;padding:0 17px;font-size:.84rem}
+#natali-tilda-index .hero{min-height:auto}
+#natali-tilda-index .hero-photo img{border-radius:150px 150px 24px 24px}
+#natali-tilda-index .hero-card{position:relative;left:auto;bottom:auto;margin:-28px 14px 0}
+#natali-tilda-index .gallery{display:flex;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+#natali-tilda-index .shot,#natali-tilda-index .shot:first-child{min-width:82%;height:360px;scroll-snap-align:center}
+#natali-tilda-index .price-list,#natali-tilda-index .price-note{padding:24px}
+#natali-tilda-index .studio-visuals{padding:0;display:grid;gap:12px;grid-template-columns:.82fr 1.18fr}
+#natali-tilda-index .studio-visuals .upright,#natali-tilda-index .studio-visuals .reclined{position:static;width:100%;height:260px;aspect-ratio:auto;border:0;border-radius:22px;object-fit:cover}
+#natali-tilda-index .studio-visuals .upright{border-radius:100px 100px 22px 22px}
+#natali-tilda-index .space-grid{gap:34px}
+#natali-tilda-index .location-card{padding:28px}
+#natali-tilda-index .map img{aspect-ratio:1/1}
+#natali-tilda-index .foot{align-items:flex-start;flex-direction:column}
+#natali-tilda-index .mobile-bar{display:grid;grid-template-columns:1fr 1.35fr;gap:8px;position:fixed;z-index:20;left:10px;right:10px;bottom:10px;padding:8px;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 40px rgba(24,17,23,.18)}
+#natali-tilda-index .mobile-bar .btn{min-height:48px;padding:0 12px;font-size:.88rem}}
+#natali-tilda-index .hero-photo img,#natali-tilda-index .studio-visuals .upright,#natali-tilda-index .studio-visuals .reclined{border-radius:0!important}
+#natali-tilda-index .reviews{background:#fbe5f0}
+#natali-tilda-index .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+#natali-tilda-index .review-card{background:white;padding:16px;border:1px solid var(--line);cursor:zoom-in;width:100%;}
+#natali-tilda-index .review-card img{width:100%;height:220px;object-fit:contain}
+#natali-tilda-index .review-card span{display:block;margin-top:12px;font:14px Manrope,sans-serif;color:var(--muted)}
+#natali-tilda-index .book-wrap{margin-top:40px}
+#natali-tilda-index .book{background:#fff;display:grid;grid-template-columns:1fr 1fr;border:1px solid #cbb4c1;box-shadow:0 20px 50px #36182d22;position:relative}
+#natali-tilda-index .book:after{content:'';position:absolute;top:0;bottom:0;left:50%;width:24px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#36182d18,transparent);pointer-events:none}
+#natali-tilda-index .book-page{margin:0;padding:28px;min-width:0;cursor:zoom-in}
+#natali-tilda-index .book-page img{width:100%;height:460px;object-fit:contain}
+#natali-tilda-index .book-page figcaption{text-align:center;margin-top:15px;color:var(--muted);font-size:14px}
+#natali-tilda-index .book-controls{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:26px}
+#natali-tilda-index .book-controls button:disabled{opacity:.35;cursor:default}
+#natali-tilda-index .book-controls output{min-width:110px;text-align:center}
+#natali-tilda-index .book.turning{animation:natali-turn .3s ease}
+@keyframes natali-turn{50%{opacity:.5;transform:perspective(1000px) rotateY(3deg)}}
+#natali-tilda-index dialog{border:0;padding:24px;background:#fff;max-width:95vw;max-height:94vh}
+#natali-tilda-index dialog::backdrop{background:#181117cc}
+#natali-tilda-index dialog img{max-height:78vh;max-width:85vw;object-fit:contain;margin:auto}
+#natali-tilda-index .close-view{display:block;margin:0 0 16px auto}
+#natali-tilda-index button{color:inherit}
+@media(max-width:850px){#natali-tilda-index .review-grid{grid-template-columns:repeat(2,1fr)}
+#natali-tilda-index .book-page{padding:16px}
+#natali-tilda-index .book-page img{height:360px}}
+@media(max-width:560px){#natali-tilda-index .review-grid{grid-template-columns:1fr}
+#natali-tilda-index .book{grid-template-columns:1fr}
+#natali-tilda-index .book:after{display:none}
+#natali-tilda-index .book-page:nth-child(2){display:none}
+#natali-tilda-index .book-page img{height:420px}
+#natali-tilda-index .book-controls{gap:10px}
+#natali-tilda-index .book-controls .btn{padding:0 16px}}
+@media(prefers-reduced-motion:reduce){#natali-tilda-index{scroll-behavior:auto}
+#natali-tilda-index .book.turning{animation:none}}
+#natali-tilda-index .ornate{position:relative;padding:38px;background:linear-gradient(135deg,#fff7fc,#f6dcea);border:1px solid #b35b86;outline:1px solid #cf8bab;outline-offset:7px;box-shadow:0 18px 50px #6b284218;margin-top:50px}
+#natali-tilda-index .ornate:before,#natali-tilda-index .ornate:after{content:"❦  ·  ❧  ·  ❦";position:absolute;left:50%;transform:translateX(-50%);font:28px Georgia,serif;letter-spacing:12px;color:#a44873;white-space:nowrap;background:#fae9f2;padding:0 18px;pointer-events:none}
+#natali-tilda-index .ornate:before{top:-22px}
+#natali-tilda-index .ornate:after{bottom:-22px;transform:translateX(-50%) rotate(180deg)}
+#natali-tilda-index .ornate .book{border:3px double #b77294;outline:1px solid #d6a1bb;outline-offset:5px;background:linear-gradient(90deg,#fffdfb,#fff8fc 49%,#fffdfb 51%,#fff8fc)}
+#natali-tilda-index .ornate .book-page{background:radial-gradient(circle at 12px 12px,#bc7799 0 2px,transparent 3px),radial-gradient(circle at calc(100% - 12px) calc(100% - 12px),#bc7799 0 2px,transparent 3px)}
+#natali-tilda-index #review-book .book-page img{height:420px}
+#natali-tilda-index #review-book .book-page figcaption{color:#934d6f}
+#natali-tilda-index .navlinks{gap:20px}
+@media(max-width:560px){#natali-tilda-index .ornate{padding:20px 12px;margin-left:8px;margin-right:8px}
+#natali-tilda-index .ornate:before,#natali-tilda-index .ornate:after{font-size:22px;letter-spacing:6px;padding:0 12px}
+#natali-tilda-index .ornate:before{top:-17px}
+#natali-tilda-index .ornate:after{bottom:-17px}
+#natali-tilda-index #review-book .book-page img{height:400px}}
+#natali-tilda-index .online-booking{background:var(--blush);scroll-margin-top:24px}
+#natali-tilda-index .booking-intro{max-width:850px;margin-bottom:32px}
+#natali-tilda-index .booking-intro h2{font-size:clamp(2.4rem,6vw,4.5rem)}
+#natali-tilda-index .booking-intro p{color:var(--muted);margin:22px 0 0}
+#natali-tilda-index .natali-calendar{width:100%;min-width:0;min-height:650px;padding:12px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+#natali-tilda-index .natali-calendar iframe{display:block;width:100%;max-width:100%;border:0}
+#natali-tilda-index .booking-fallback{margin-top:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+#natali-tilda-index .booking-note{font-size:14px;color:var(--muted);max-width:850px;margin-top:22px}
+#natali-tilda-index .booking-note a{text-underline-offset:3px}
+@media(max-width:560px){#natali-tilda-index .natali-calendar{padding:0;min-height:720px;border-radius:12px}
+#natali-tilda-index .booking-fallback .btn{white-space:normal;text-align:center;max-width:100%;padding:12px 20px}}
+#natali-tilda-index .hero-photo img{border-radius:0!important;aspect-ratio:auto;object-fit:contain;background:#fff}
+#natali-tilda-index .works-gallery{min-width:0}
+#natali-tilda-index .gallery-hint{color:#cbbec8;font-size:14px;margin:0 0 20px}
+#natali-tilda-index .works-track{position:relative;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#e765a4 #34202e;padding:4px 0 16px}
+#natali-tilda-index .work-photo{position:relative;flex:0 0 calc((100% - 32px)/3);min-width:0;aspect-ratio:1/1;margin:0;padding:0;border:0;border-radius:0;background:#fff;cursor:zoom-in;scroll-snap-align:start;overflow:hidden}
+#natali-tilda-index .work-photo img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .25s ease}
+#natali-tilda-index .work-photo:hover img{transform:scale(1.02)}
+#natali-tilda-index .work-photo:focus-visible,#natali-tilda-index .works-track:focus-visible{outline:3px solid var(--pink);outline-offset:-3px}
+#natali-tilda-index .works-controls{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:24px}
+#natali-tilda-index .works-controls .btn{color:#fff;border-color:#b98aa2;min-width:52px;font-size:24px}
+#natali-tilda-index .works-controls .btn:disabled{opacity:.3;cursor:default;transform:none;box-shadow:none}
+#natali-tilda-index .works-controls output{min-width:110px;text-align:center;color:#dfd0da;font-size:14px}
+#natali-tilda-index .image-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:18px}
+#natali-tilda-index .image-nav[hidden]{display:none}
+#natali-tilda-index .image-nav button:disabled{opacity:.3;cursor:default}
+@media(max-width:850px){#natali-tilda-index .work-photo{flex-basis:calc((100% - 16px)/2)}}
+@media(max-width:560px){#natali-tilda-index .work-photo{flex-basis:88%}
+#natali-tilda-index .works-track{gap:12px}
+#natali-tilda-index .works-controls{gap:18px}
+#natali-tilda-index .gallery-hint{font-size:13px}
+#natali-tilda-index .image-nav .btn{padding:0 16px}
+#natali-tilda-index .hero-photo img{border-radius:0!important}}
+@media(prefers-reduced-motion:reduce){#natali-tilda-index .work-photo img{transition:none}}
+#natali-tilda-index .brand img{width:96px;height:96px;object-fit:contain;border-radius:0}
+#natali-tilda-index .nav{gap:24px}
+#natali-tilda-index .navlinks{gap:18px}
+#natali-tilda-index .navlinks a{font-size:.82rem;white-space:nowrap}
+#natali-tilda-index header{padding:12px 0}
+#natali-tilda-index .nav>.btn{flex-shrink:0}
+#natali-tilda-index .about{background:#fff}
+#natali-tilda-index .about-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:64px;align-items:center}
+#natali-tilda-index .about-portrait{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;max-width:400px;margin:auto}
+#natali-tilda-index .about-copy p,#natali-tilda-index .about-copy .lead{font-family:Arial,Helvetica,sans-serif;font-size:1rem;font-weight:400;line-height:1.65;color:var(--muted)}
+#natali-tilda-index .about-copy h2{font-size:clamp(2.5rem,5vw,4rem)}
+#natali-tilda-index .qualification{margin-top:55px;padding-top:35px;border-top:1px solid var(--line)}
+#natali-tilda-index .qualification h3{font-size:2rem}
+#natali-tilda-index .document-image{display:block;margin:25px 0 16px;width:100%;padding:0;border:1px solid var(--line);background:#fff;cursor:zoom-in}
+#natali-tilda-index .document-image img{width:100%;height:auto}
+#natali-tilda-index .document-links{display:flex;flex-wrap:wrap;gap:14px 28px;font-size:.86rem;color:var(--muted)}
+#natali-tilda-index .document-links a{text-underline-offset:4px}
+#natali-tilda-index .promotions{background:var(--blush)}
+#natali-tilda-index .section-lead{max-width:680px;color:var(--muted);margin-bottom:32px}
+#natali-tilda-index .promo-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+#natali-tilda-index .promo-card{background:#fff;border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;gap:12px}
+#natali-tilda-index .promo-card>img{height:230px;width:100%;object-fit:contain;background:#fff;margin-bottom:12px}
+#natali-tilda-index .promo-card h3{font-size:2rem;margin:0}
+#natali-tilda-index .promo-card p{margin:0;color:var(--muted)}
+#natali-tilda-index .promo-card .offer{color:var(--pink-deep);font-size:1.18rem;font-weight:800}
+#natali-tilda-index .promo-card ul{padding-left:20px;margin:0 0 12px;color:var(--muted)}
+#natali-tilda-index .promo-card li{margin-bottom:10px}
+#natali-tilda-index .promo-card .btn{align-self:flex-start;margin-top:auto;white-space:normal;text-align:center}
+#natali-tilda-index .promo-label{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:var(--pink-deep);font-weight:800}
+#natali-tilda-index .gift{background:var(--ink);color:white}
+#natali-tilda-index .gift-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}
+#natali-tilda-index .gift .eyebrow{color:#f7a8cd}
+#natali-tilda-index .gift p{color:#dccbd5}
+#natali-tilda-index .gift-image{border:0;padding:0;cursor:zoom-in;background:none;width:100%}
+#natali-tilda-index .gift-image img{width:100%;height:auto}
+#natali-tilda-index .gift .btn{background:#fff;color:var(--ink);border-color:#fff;white-space:normal;text-align:center}
+#natali-tilda-index .rules-preview{padding:70px 0}
+#natali-tilda-index .rules-panel{border:1px solid var(--line);padding:38px;background:#fff;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
+#natali-tilda-index .rules-panel h2{font-size:2.6rem}
+#natali-tilda-index .rules-panel p{margin-bottom:0;max-width:740px;color:var(--muted)}
+#natali-tilda-index .rules-panel .btn{white-space:normal;text-align:center}
+#natali-tilda-index .consent-form{max-width:900px;background:#fff;border:1px solid var(--line);padding:28px;margin:24px 0}
+#natali-tilda-index .consent-form fieldset{border:0;margin:0;padding:0}
+#natali-tilda-index .consent-form legend{font-weight:800;font-size:1.08rem;margin-bottom:20px}
+#natali-tilda-index .consent-row{display:flex;align-items:flex-start;gap:13px;margin:18px 0;cursor:pointer}
+#natali-tilda-index .consent-row input{width:22px;height:22px;flex:0 0 22px;margin:4px 0 0;accent-color:var(--pink-deep)}
+#natali-tilda-index .consent-row span{font-size:.93rem}
+#natali-tilda-index .consent-form .fine{margin:12px 0 20px}
+#natali-tilda-index .consent-row a{text-underline-offset:3px}
+#natali-tilda-index .btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+#natali-tilda-index .consent-summary{border-left:3px solid var(--pink-deep);padding:10px 18px;background:#fff;margin:24px 0}
+#natali-tilda-index .consent-summary p{margin:0 0 10px}
+#natali-tilda-index .consent-edit{border:0;padding:0;text-decoration:underline;text-underline-offset:4px;background:none;font:inherit;color:var(--pink-deep);cursor:pointer}
+#natali-tilda-index .booking-fallback[hidden],#natali-tilda-index .natali-calendar[hidden],#natali-tilda-index .consent-form[hidden],#natali-tilda-index .consent-summary[hidden]{display:none}
+#natali-tilda-index .footer-documents{border-top:1px solid var(--line);padding-top:24px;margin-top:28px}
+#natali-tilda-index .footer-documents p{font-size:.82rem;color:var(--muted);max-width:850px}
+#natali-tilda-index .footer-documents .foot-links{gap:12px 24px;font-size:.83rem}
+#natali-tilda-index footer .foot{align-items:flex-start}
+@media(max-width:1100px){#natali-tilda-index .navlinks{gap:12px}
+#natali-tilda-index .navlinks a{font-size:.76rem}
+#natali-tilda-index .brand img{width:80px;height:80px}
+#natali-tilda-index .nav{gap:12px}}
+@media(max-width:850px){#natali-tilda-index .about-grid,#natali-tilda-index .gift-grid{grid-template-columns:1fr;gap:30px}
+#natali-tilda-index .about-portrait{max-width:320px}
+#natali-tilda-index .about-copy h2{font-size:3rem}
+#natali-tilda-index .promo-grid{gap:16px}
+#natali-tilda-index .promo-card{padding:22px}
+#natali-tilda-index .promo-card>img{height:190px}
+#natali-tilda-index .rules-panel{grid-template-columns:1fr}
+#natali-tilda-index .rules-panel .btn{justify-self:start}
+#natali-tilda-index .qualification{margin-top:32px}
+#natali-tilda-index .gift-grid{gap:34px}}
+@media(max-width:560px){#natali-tilda-index .brand img{width:76px;height:76px}
+#natali-tilda-index .hero{padding-top:130px}
+#natali-tilda-index .about-copy h2{font-size:2.5rem}
+#natali-tilda-index .promo-grid{grid-template-columns:1fr}
+#natali-tilda-index .promo-card{padding:24px}
+#natali-tilda-index .promo-card>img{height:auto;max-height:260px}
+#natali-tilda-index .gift-grid{gap:28px}
+#natali-tilda-index .gift h2{font-size:2.7rem}
+#natali-tilda-index .rules-preview{padding:55px 0}
+#natali-tilda-index .rules-panel{padding:26px}
+#natali-tilda-index .rules-panel h2{font-size:2.3rem}
+#natali-tilda-index .consent-form{padding:22px 18px}
+#natali-tilda-index .consent-form .btn{width:100%;white-space:normal;text-align:center;padding:12px 18px}
+#natali-tilda-index .consent-row span{font-size:.86rem}
+#natali-tilda-index .document-links{display:grid;gap:12px}
+#natali-tilda-index .gift .btn{width:100%}}
+#natali-tilda-index .hero{overflow:hidden}
+#natali-tilda-index .hero-photo img{width:100%;height:auto;object-fit:contain;aspect-ratio:auto}
+#natali-tilda-index .price-image-card{display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+#natali-tilda-index .price-image-card .correction-price{margin:0;max-width:480px;border:0}
+#natali-tilda-index .correction-price img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}
+#natali-tilda-index #prices .price-grid{grid-template-columns:1fr 1fr;align-items:start}
+@media(max-width:850px){#natali-tilda-index #prices .price-grid{grid-template-columns:1fr}}
+#natali-tilda-index .client-options{display:flex;flex-wrap:wrap;gap:16px 28px;margin-bottom:22px}
+#natali-tilda-index .client-options label{display:flex;align-items:center;gap:9px;cursor:pointer}
+#natali-tilda-index .client-options input{width:20px;height:20px;accent-color:var(--pink-deep)}
+#natali-tilda-index .consent-form fieldset+fieldset{margin-top:20px}
+#natali-tilda-index{--ink:#20352f;--paper:#fffaf7;--blush:#f9e7e9;--muted:#5e6660;--line:#d9ccc5}
+#natali-tilda-index{font-size:16px;line-height:1.55;background:var(--paper)}
+#natali-tilda-index h1{font-size:clamp(2.1rem,4.3vw,3.45rem);line-height:1.06;letter-spacing:-.035em}
+#natali-tilda-index h2,#natali-tilda-index .about-copy h2,#natali-tilda-index .gift h2,#natali-tilda-index .rules-panel h2{font-size:clamp(1.65rem,2.7vw,2.3rem);line-height:1.12;letter-spacing:-.025em}
+#natali-tilda-index h3,#natali-tilda-index .qualification h3,#natali-tilda-index .promo-card h3{font-size:1.35rem;line-height:1.22}
+#natali-tilda-index section,#natali-tilda-index .rules-preview{padding:42px 0}
+#natali-tilda-index .shell{width:min(1120px,calc(100% - 40px))}
+#natali-tilda-index p{margin:12px 0}
+#natali-tilda-index .eyebrow{font-size:.68rem;letter-spacing:.15em;margin-bottom:10px}
+#natali-tilda-index .btn{min-height:44px;padding:0 20px;font-size:.9rem}
+#natali-tilda-index header{position:relative;padding:8px 0;background:#fffaf7;border-bottom:1px solid var(--line)}
+#natali-tilda-index .nav{gap:18px}
+#natali-tilda-index .brand{gap:10px}
+#natali-tilda-index .brand img{width:40px;height:70px;object-fit:contain}
+#natali-tilda-index .brand span{font-size:.85rem;letter-spacing:.14em}
+#natali-tilda-index .navlinks{gap:15px}
+#natali-tilda-index .navlinks a{font-size:.76rem}
+#natali-tilda-index .hero{min-height:0;padding:38px 0;background:linear-gradient(125deg,#faf0e8,#f9e3e9 55%,#eee9df);overflow:hidden}
+#natali-tilda-index .hero:after{display:none}
+#natali-tilda-index .hero-grid{grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+#natali-tilda-index .hero-copy p{font-size:1rem;max-width:650px;color:var(--muted)}
+#natali-tilda-index .hero-copy .hero-lead{font-size:1.04rem}
+#natali-tilda-index .intro-bio h2{font-size:1.35rem;margin:22px 0 10px}
+#natali-tilda-index .intro-bio p{font-size:.95rem}
+#natali-tilda-index .intro-visuals{display:grid;grid-template-columns:1fr;gap:12px;max-width:360px;margin-left:auto;width:100%}
+#natali-tilda-index .intro-portrait{width:100%;height:auto;object-fit:contain;aspect-ratio:1;border:1px solid #fff}
+#natali-tilda-index .intro-detail{display:flex;justify-content:center;align-items:center;gap:16px;padding:12px;background:#fff8;border:1px solid #dbcac0}
+#natali-tilda-index .intro-work{padding:0;border:0;background:transparent;cursor:zoom-in;flex:0 1 145px}
+#natali-tilda-index .intro-work img{width:100%;height:auto;object-fit:contain}
+#natali-tilda-index .intro-logo{width:auto;height:145px;max-width:45%;object-fit:contain}
+#natali-tilda-index .hero-copy .intro-note{font-size:.85rem;margin-bottom:0}
+#natali-tilda-index .actions{margin-top:20px;gap:10px;flex-wrap:wrap}
+#natali-tilda-index .documents-inline{border-bottom:1px solid var(--line);padding:10px 0;font-size:.9rem}
+#natali-tilda-index .documents-inline summary{cursor:pointer;font-weight:700;color:var(--ink)}
+#natali-tilda-index .documents-inline summary:focus-visible{outline:2px solid var(--pink-deep);outline-offset:4px}
+#natali-tilda-index .documents-inline .document-image{margin:16px 0 10px}
+#natali-tilda-index .documents-inline .document-links{font-size:.8rem}
+#natali-tilda-index .portfolio-head,#natali-tilda-index .prices-head{gap:24px;margin-bottom:20px;align-items:start}
+#natali-tilda-index .portfolio-head p,#natali-tilda-index .prices-head p{margin:0;font-size:.95rem}
+#natali-tilda-index .portfolio-head h2 br{display:none}
+#natali-tilda-index .gallery-hint{margin:12px 0;font-size:.82rem}
+#natali-tilda-index .work-photo{aspect-ratio:1/1}
+#natali-tilda-index .works-controls{margin-top:12px}
+#natali-tilda-index .price-grid{gap:18px!important}
+#natali-tilda-index .price-list,#natali-tilda-index .price-note{padding:16px}
+#natali-tilda-index .price-image-card{gap:12px}
+#natali-tilda-index .price-image-card .correction-price{max-width:420px}
+#natali-tilda-index .prices-head h2{max-width:none}
+#natali-tilda-index .books-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;width:min(1120px,calc(100% - 40px));margin:auto}
+#natali-tilda-index .books-row section{min-width:0;background:transparent;padding:32px 0}
+#natali-tilda-index .books-row .shell{width:100%}
+#natali-tilda-index .books-row h2{font-size:1.9rem}
+#natali-tilda-index .books-row p{font-size:.9rem;min-height:48px}
+#natali-tilda-index .ornate{padding:20px;outline-offset:3px;margin-top:24px}
+#natali-tilda-index .ornate:before,#natali-tilda-index .ornate:after{font-size:24px}
+#natali-tilda-index .book{min-height:0;gap:12px}
+#natali-tilda-index .book-page{min-height:0;margin:0;padding:10px}
+#natali-tilda-index .book-page img{height:240px;object-fit:contain}
+#natali-tilda-index .book-page figcaption{font-size:.75rem;margin-top:8px}
+#natali-tilda-index .book-controls{margin-top:14px}
+#natali-tilda-index .book-controls button{padding:8px 16px;min-height:40px}
+#natali-tilda-index .compact-promos{gap:20px;margin-top:22px}
+#natali-tilda-index .compact-promos .promo-card{padding:0;border:0;background:transparent;gap:12px;align-items:center}
+#natali-tilda-index .promotion-image{display:block;width:100%;max-width:440px;border:1px solid var(--line);padding:0;background:transparent;cursor:zoom-in}
+#natali-tilda-index .promotion-image img{width:100%;height:auto;object-fit:contain}
+#natali-tilda-index .compact-promos .promo-card .btn{align-self:center;margin-top:0}
+#natali-tilda-index .promotions{background:#f8e4e8}
+#natali-tilda-index .visit-section{background:#f0eee6}
+#natali-tilda-index .visit-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:22px}
+#natali-tilda-index .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+#natali-tilda-index .visit-grid p{font-size:.9rem}
+#natali-tilda-index .chair-pair{display:flex;gap:12px;align-items:center;margin-top:18px}
+#natali-tilda-index .chair-pair button,#natali-tilda-index .map-image{padding:0;border:0;background:none;cursor:zoom-in;min-width:0}
+#natali-tilda-index .chair-pair button{width:50%}
+#natali-tilda-index .chair-pair img{width:100%;height:245px;object-fit:contain}
+#natali-tilda-index .map-image{display:block;width:100%;margin-top:18px}
+#natali-tilda-index .map-image img{width:100%;height:245px;object-fit:contain;background:#fff}
+#natali-tilda-index .directions-compact .fine{font-size:.78rem}
+#natali-tilda-index .online-booking{padding:38px 0!important}
+#natali-tilda-index .booking-intro h2 br{display:none}
+#natali-tilda-index .booking-intro p{margin:10px 0;font-size:.95rem}
+#natali-tilda-index .consent-form{max-width:900px;padding:22px;margin:20px 0}
+#natali-tilda-index .consent-form legend{font-size:1rem;margin-bottom:14px}
+#natali-tilda-index .client-options{gap:12px 24px;margin-bottom:16px}
+#natali-tilda-index .consent-form fieldset+fieldset{margin-top:8px}
+#natali-tilda-index .consent-row{margin:14px 0}
+#natali-tilda-index .consent-row span{font-size:.86rem}
+#natali-tilda-index .consent-form .fine{font-size:.8rem;margin:10px 0 16px}
+#natali-tilda-index .booking-links{display:flex;align-items:center;gap:12px 22px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:.88rem}
+#natali-tilda-index .booking-links a{text-underline-offset:4px}
+#natali-tilda-index .booking-note{font-size:.8rem}
+#natali-tilda-index .cta{padding:0}
+#natali-tilda-index .footer-documents{margin-top:16px;padding-top:16px}
+#natali-tilda-index footer{padding:26px 0}
+#natali-tilda-index .foot{gap:20px;font-size:.8rem}
+#natali-tilda-index footer .brand img{height:50px;width:28px}
+@media(max-width:850px){#natali-tilda-index .hero-grid{grid-template-columns:1fr 1fr;gap:24px}
+#natali-tilda-index .intro-visuals{max-width:310px}
+#natali-tilda-index .intro-work{flex-basis:110px}
+#natali-tilda-index .intro-logo{height:120px}
+#natali-tilda-index .navlinks{display:none}
+#natali-tilda-index .books-row{grid-template-columns:1fr;gap:0;max-width:650px}
+#natali-tilda-index .books-row p{min-height:0}
+#natali-tilda-index .book-page img{height:290px}
+#natali-tilda-index .visit-grid{gap:20px}
+#natali-tilda-index .chair-pair img,#natali-tilda-index .map-image img{height:210px}
+#natali-tilda-index .price-image-card .correction-price{max-width:420px;margin:auto}
+#natali-tilda-index .price-image-card{align-items:center}
+#natali-tilda-index .price-grid{grid-template-columns:1fr 1fr!important}}
+@media(max-width:560px){#natali-tilda-index{padding-bottom:76px}
+#natali-tilda-index header{padding:6px 0}
+#natali-tilda-index .brand img{width:30px;height:52px}
+#natali-tilda-index .brand span{font-size:.75rem}
+#natali-tilda-index .nav>.btn{min-height:40px;padding:0 14px}
+#natali-tilda-index .shell,#natali-tilda-index .books-row{width:calc(100% - 28px)}
+#natali-tilda-index section{padding:28px 0}
+#natali-tilda-index .hero{padding:25px 0}
+#natali-tilda-index .hero-grid{grid-template-columns:1fr;gap:24px}
+#natali-tilda-index .hero-copy h1{font-size:2.15rem}
+#natali-tilda-index .hero-copy .hero-lead{font-size:.96rem}
+#natali-tilda-index .intro-bio h2{margin-top:18px;font-size:1.24rem}
+#natali-tilda-index .intro-bio p{font-size:.9rem}
+#natali-tilda-index .intro-visuals{max-width:360px;margin:auto;grid-template-columns:1.3fr .7fr;align-items:stretch;gap:10px}
+#natali-tilda-index .intro-portrait{align-self:center}
+#natali-tilda-index .intro-detail{display:flex;flex-direction:column;gap:8px;padding:8px}
+#natali-tilda-index .intro-work{flex:0 0 auto;width:100%}
+#natali-tilda-index .intro-logo{height:100px;max-width:100%}
+#natali-tilda-index .portfolio-head,#natali-tilda-index .prices-head{grid-template-columns:1fr;gap:12px}
+#natali-tilda-index .price-grid{grid-template-columns:1fr!important}
+#natali-tilda-index .price-list,#natali-tilda-index .price-note{padding:12px}
+#natali-tilda-index .books-row h2{font-size:1.7rem}
+#natali-tilda-index .books-row section{padding:28px 0}
+#natali-tilda-index .ornate{padding:18px}
+#natali-tilda-index .book-page img{height:260px}
+#natali-tilda-index .compact-promos{grid-template-columns:1fr;gap:22px}
+#natali-tilda-index .promotion-image{max-width:380px}
+#natali-tilda-index .visit-heading{align-items:flex-start;flex-direction:column;gap:12px}
+#natali-tilda-index .visit-grid{grid-template-columns:1fr;gap:22px}
+#natali-tilda-index .chair-pair img{height:210px}
+#natali-tilda-index .map-image img{height:auto}
+#natali-tilda-index .online-booking{padding:28px 0!important}
+#natali-tilda-index .consent-form{padding:18px 14px}
+#natali-tilda-index .booking-links{gap:12px 18px}
+#natali-tilda-index .client-options{flex-direction:column;gap:10px}
+#natali-tilda-index .mobile-bar .btn{min-height:44px}
+#natali-tilda-index .actions .btn{padding:0 16px}
+#natali-tilda-index .book-controls{gap:12px}
+#natali-tilda-index footer .foot{gap:18px}
+#natali-tilda-index .foot-links{gap:12px}
+
+}
+#natali-tilda-index .hero-copy p{margin:12px 0}
+#natali-tilda-index .booking-intro{margin-bottom:18px}
+#natali-tilda-index .booking-intro h2{font-size:clamp(1.65rem,2.7vw,2.3rem)}
+@media(max-width:560px){#natali-tilda-index .portfolio-head{display:block}
+#natali-tilda-index .portfolio-head p{margin-top:12px}
+#natali-tilda-index .booking-intro h2{font-size:1.85rem}}
+#natali-tilda-index .book-controls output{min-width:65px;font-size:.82rem}
+#natali-tilda-index .book-controls button{padding:8px 12px}
+#natali-tilda-index header .brand span{display:inline;color:var(--ink)}
+#natali-tilda-index .intro-visuals{grid-template-columns:1fr}
+#natali-tilda-index .telegram-pending{min-height:38px;padding:0 14px;font-size:.84rem}
+@media(max-width:560px){#natali-tilda-index .intro-visuals{grid-template-columns:1fr;max-width:320px}}
+#natali-tilda-index .compact-promos{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:560px){#natali-tilda-index .compact-promos{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:85%;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:12px}
+#natali-tilda-index .compact-promos .promo-card{min-width:0;scroll-snap-align:start}
+#natali-tilda-index .promo-scroll-hint{font-size:.8rem;color:var(--muted);margin:10px 0 0}}
+@media(min-width:561px){#natali-tilda-index .promo-scroll-hint{display:none}}
+#natali-tilda-index .price-grid{align-items:stretch}
+#natali-tilda-index .price-grid .price-image-card{display:flex;flex-direction:column;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 12px 35px rgba(34,57,48,.05);gap:12px}
+#natali-tilda-index .price-grid .price-image-card h3{margin:0;width:100%}
+#natali-tilda-index .price-grid .price-image-card .correction-price{margin:0;width:100%;max-width:420px}
+#natali-tilda-index .price-actions{justify-content:center;margin-top:16px}
+#natali-tilda-index .messenger-actions{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px}
+#natali-tilda-index .compact-promos .messenger-actions .btn{padding:0 12px;font-size:.8rem;min-height:38px}
+#natali-tilda-index .visit-heading .messenger-actions{flex-shrink:0}
+@media(max-width:560px){#natali-tilda-index .price-grid .price-image-card{padding:12px}
+#natali-tilda-index .visit-heading .messenger-actions{justify-content:flex-start}}
+#natali-tilda-index .book-image{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;height:240px;width:100%;background:#fffafc}
+#natali-tilda-index .books-row .book-page .book-image img{height:100%;width:100%;object-fit:contain}
+#natali-tilda-index .books-row .book-page .neon-sample img{position:absolute;max-width:none;width:116%;height:auto;left:-10%;top:-42%;object-fit:initial}
+#natali-tilda-index .books-row .book-page figcaption{color:var(--muted);font-size:.75rem}
+#natali-tilda-index .books-row .book-wrap{margin-top:24px}
+#natali-tilda-index .books-row h2{min-height:2.24em}
+#natali-tilda-index .books-row section p{margin-top:10px;margin-bottom:0}
+@media(max-width:850px){#natali-tilda-index .book-image{height:290px}
+#natali-tilda-index .books-row h2{min-height:0}}
+@media(max-width:560px){#natali-tilda-index .book-image{height:260px}}
+#natali-tilda-index .book-image-inner{display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+#natali-tilda-index .book-image-inner.neon-sample{display:block;position:relative;overflow:hidden;width:min(100%,240px);height:auto;aspect-ratio:1}
+@media(max-width:850px){#natali-tilda-index .book-image-inner.neon-sample{width:min(100%,290px)}}
+@media(max-width:560px){#natali-tilda-index .book-image-inner.neon-sample{width:min(100%,260px)}}
+
+
+</style>
+<div id="natali-tilda-index">
+  <header><div class="shell nav"><a class="brand" href="#top"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/logo-natali-20261013.jpg" alt="Логотип Natali Lash"><span>NATALI LASH</span></a><nav class="navlinks" aria-label="Основная навигация"><a href="#about">О мастере</a><a href="#works">Работы</a><a href="#prices">Прайс</a><a href="#catalog">Ресницы</a><a href="#reviews">Отзывы</a><a href="#promotions">Акции</a><a href="#contacts">Контакты</a></nav><a class="btn" href="#online-booking">Записаться</a></div></header>
+
+  <main id="top">
+    <section class="hero compact-intro" id="about"><div class="shell hero-grid">
+  <div class="hero-copy"><div class="eyebrow">Natali Lash · Воронеж, Северный</div><h1>Ресницы, которые<br>идут тебе</h1><p class="hero-lead">От естественной классики до выразительных 5D — с индивидуальным подбором длины, изгиба и объёма.</p>
+    <div class="intro-bio"><h2>Давайте знакомиться</h2><p>Меня зовут Наталия Клименко, и я — создательница Natali Lash. Подбираю эффект под вашу внешность, работаю без конвейера и решаю все вопросы лично. Ваш комфорт — моя работа.</p><p>Мою квалификацию подтверждает свидетельство Воронежского института профессионального образования и повышения квалификации: «Лешмейкер-мастер-универсал», 144 академических часа.</p></div>
+    <details class="documents-inline"><summary>Документы о квалификации</summary><button class="document-image" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/qualifications-collage.jpg" aria-label="Увеличить фотографии документов о квалификации"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/qualifications-collage.jpg" alt="Обложка и свидетельство о профессиональном обучении Наталии Клименко" loading="lazy"></button><div class="document-links"><a href="https://storozenko-digital.github.io/natali-lash-voronezh/assets/qualification-certificate.jpg" target="_blank" rel="noopener">Оригинал свидетельства</a><a href="https://storozenko-digital.github.io/natali-lash-voronezh/assets/qualification-cover.jpg" target="_blank" rel="noopener">Оригинал фотографии документов</a><span>Выдано 30 марта 2026 года.</span></div></details>
+    <div class="actions"><a class="btn primary" href="#online-booking">Записаться</a><a class="btn" href="#works">Смотреть работы</a></div><p class="intro-note">Декор включён: стразы, лучи, блёстки и цветные ресницы.</p>
+  </div>
+  <div class="intro-visuals"><img class="intro-portrait" src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/portrait-natali-20261013.jpg" width="1024" height="1024" alt="Наталия Клименко — мастер Natali Lash"></div>
+</div></section>
+
+<section class="portfolio" id="works"><div class="shell"><div class="portfolio-head" data-reveal><div><div class="eyebrow">Портфолио</div><h2>Работы, которые говорят глазами</h2></div><p>Разные объёмы, изгибы и акценты. Листайте галерею и выбирайте эффект, который нравится.</p></div><div class="works-gallery" aria-label="Фотографии работ Наталии"><p class="gallery-hint">Листайте фотографии стрелками или свайпом. Нажмите на фото, чтобы рассмотреть детали.</p><div class="works-track" id="works-track" tabindex="0" role="region" aria-label="Лента фотографий работ"><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210528.jpg" aria-label="Увеличить работу 1"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210528.jpg" alt="Наращивание ресниц — работа Наталии 1" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210537.jpg" aria-label="Увеличить работу 2"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210537.jpg" alt="Наращивание ресниц — работа Наталии 2" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210543.jpg" aria-label="Увеличить работу 3"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210543.jpg" alt="Наращивание ресниц — работа Наталии 3" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210555.jpg" aria-label="Увеличить работу 4"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210555.jpg" alt="Наращивание ресниц — работа Наталии 4" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210602.jpg" aria-label="Увеличить работу 5"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210602.jpg" alt="Наращивание ресниц — работа Наталии 5" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210608.jpg" aria-label="Увеличить работу 6"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210608.jpg" alt="Наращивание ресниц — работа Наталии 6" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210617.jpg" aria-label="Увеличить работу 7"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210617.jpg" alt="Наращивание ресниц — работа Наталии 7" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210624.jpg" aria-label="Увеличить работу 8"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210624.jpg" alt="Наращивание ресниц — работа Наталии 8" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210631.jpg" aria-label="Увеличить работу 9"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210631.jpg" alt="Наращивание ресниц — работа Наталии 9" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210637.jpg" aria-label="Увеличить работу 10"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210637.jpg" alt="Наращивание ресниц — работа Наталии 10" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210644.jpg" aria-label="Увеличить работу 11"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210644.jpg" alt="Наращивание ресниц — работа Наталии 11" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210652.jpg" aria-label="Увеличить работу 12"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210652.jpg" alt="Наращивание ресниц — работа Наталии 12" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210701.jpg" aria-label="Увеличить работу 13"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210701.jpg" alt="Наращивание ресниц — работа Наталии 13" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210709.jpg" aria-label="Увеличить работу 14"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210709.jpg" alt="Наращивание ресниц — работа Наталии 14" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210716.jpg" aria-label="Увеличить работу 15"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210716.jpg" alt="Наращивание ресниц — работа Наталии 15" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210721.jpg" aria-label="Увеличить работу 16"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210721.jpg" alt="Наращивание ресниц — работа Наталии 16" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210727.jpg" aria-label="Увеличить работу 17"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210727.jpg" alt="Наращивание ресниц — работа Наталии 17" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210733.jpg" aria-label="Увеличить работу 18"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210733.jpg" alt="Наращивание ресниц — работа Наталии 18" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210739.jpg" aria-label="Увеличить работу 19"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210739.jpg" alt="Наращивание ресниц — работа Наталии 19" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210746.jpg" aria-label="Увеличить работу 20"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210746.jpg" alt="Наращивание ресниц — работа Наталии 20" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210752.jpg" aria-label="Увеличить работу 21"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210752.jpg" alt="Наращивание ресниц — работа Наталии 21" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210758.jpg" aria-label="Увеличить работу 22"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210758.jpg" alt="Наращивание ресниц — работа Наталии 22" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210807.jpg" aria-label="Увеличить работу 23"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210807.jpg" alt="Наращивание ресниц — работа Наталии 23" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210815.jpg" aria-label="Увеличить работу 24"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210815.jpg" alt="Наращивание ресниц — работа Наталии 24" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210822.jpg" aria-label="Увеличить работу 25"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210822.jpg" alt="Наращивание ресниц — работа Наталии 25" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210831.jpg" aria-label="Увеличить работу 26"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210831.jpg" alt="Наращивание ресниц — работа Наталии 26" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210839.jpg" aria-label="Увеличить работу 27"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210839.jpg" alt="Наращивание ресниц — работа Наталии 27" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210844.jpg" aria-label="Увеличить работу 28"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210844.jpg" alt="Наращивание ресниц — работа Наталии 28" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210851.jpg" aria-label="Увеличить работу 29"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210851.jpg" alt="Наращивание ресниц — работа Наталии 29" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210900.jpg" aria-label="Увеличить работу 30"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210900.jpg" alt="Наращивание ресниц — работа Наталии 30" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210911.jpg" aria-label="Увеличить работу 31"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210911.jpg" alt="Наращивание ресниц — работа Наталии 31" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210919.jpg" aria-label="Увеличить работу 32"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210919.jpg" alt="Наращивание ресниц — работа Наталии 32" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210925.jpg" aria-label="Увеличить работу 33"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210925.jpg" alt="Наращивание ресниц — работа Наталии 33" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210931.jpg" aria-label="Увеличить работу 34"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210931.jpg" alt="Наращивание ресниц — работа Наталии 34" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210937.jpg" aria-label="Увеличить работу 35"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210937.jpg" alt="Наращивание ресниц — работа Наталии 35" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210944.jpg" aria-label="Увеличить работу 36"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210944.jpg" alt="Наращивание ресниц — работа Наталии 36" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210950.jpg" aria-label="Увеличить работу 37"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210950.jpg" alt="Наращивание ресниц — работа Наталии 37" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210956.jpg" aria-label="Увеличить работу 38"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-210956.jpg" alt="Наращивание ресниц — работа Наталии 38" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211002.jpg" aria-label="Увеличить работу 39"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211002.jpg" alt="Наращивание ресниц — работа Наталии 39" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211008.jpg" aria-label="Увеличить работу 40"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211008.jpg" alt="Наращивание ресниц — работа Наталии 40" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211017.jpg" aria-label="Увеличить работу 41"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211017.jpg" alt="Наращивание ресниц — работа Наталии 41" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211023.jpg" aria-label="Увеличить работу 42"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211023.jpg" alt="Наращивание ресниц — работа Наталии 42" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211033.jpg" aria-label="Увеличить работу 43"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211033.jpg" alt="Наращивание ресниц — работа Наталии 43" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211039.jpg" aria-label="Увеличить работу 44"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211039.jpg" alt="Наращивание ресниц — работа Наталии 44" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211046.jpg" aria-label="Увеличить работу 45"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211046.jpg" alt="Наращивание ресниц — работа Наталии 45" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211052.jpg" aria-label="Увеличить работу 46"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211052.jpg" alt="Наращивание ресниц — работа Наталии 46" loading="lazy" decoding="async" width="600" height="600"></button><button class="work-photo" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211057.jpg" aria-label="Увеличить работу 47"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/work-20261006-211057.jpg" alt="Наращивание ресниц — работа Наталии 47" loading="lazy" decoding="async" width="600" height="600"></button></div><div class="works-controls"><button class="btn" id="works-prev" type="button" aria-controls="works-track" aria-label="Предыдущие фотографии">←</button><output id="works-count" aria-live="polite" aria-atomic="true">1 / 47</output><button class="btn" id="works-next" type="button" aria-controls="works-track" aria-label="Следующие фотографии">→</button></div></div></div></section>
+
+    <section id="prices"><div class="shell"><div class="prices-head" data-reveal><div><div class="eyebrow">Честный прайс</div><h2>Выберите свой объём</h2></div><p>Стразы, блёстки, лучи и цветные ресницы входят в стоимость основного наращивания.</p></div><div class="price-grid"><div class="price-list price-image-card" data-reveal><h3>Наращивание</h3><button class="document-image correction-price" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/price-main-20261008.jpg" aria-label="Увеличить прайс наращивания ресниц"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/price-main-20261008.jpg" width="1024" height="1024" alt="Прайс: классика — 1 300 рублей, 2D — 1 500, 3D — 1 700, 4D — 1 900, 5D — 2 100. Снятие без наращивания — 300 рублей, перед наращиванием — бесплатно. Декор включён" loading="lazy"></button></div><aside class="price-note price-image-card" data-reveal><h3>Коррекция</h3><button class="document-image correction-price" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/price-correction-20261008.jpg" aria-label="Увеличить прайс коррекции ресниц"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/price-correction-20261008.jpg" width="1024" height="1024" alt="Прайс коррекции: до 5 дней — бесплатно; от 5 до 14 дней — 1 000 рублей; после 14 дней — по стоимости основного наращивания" loading="lazy"></button></aside></div><div class="actions price-actions"><a class="btn primary" href="#online-booking">Уточнить и записаться</a></div></div></section>
+
+
+
+<div class="books-row"><section id="catalog"><div class="shell"><div class="eyebrow">Материалы</div><h2>Ресницы в наличии</h2><p>Листайте каталог и выбирайте понравившийся оттенок. Длину, изгиб и сочетание подберём при записи.</p><div class="book-wrap ornate"><div class="book" id="lash-book" aria-label="Каталог ресниц"></div><div class="book-controls"><button class="btn" id="lash-prev" type="button">Назад</button><output id="lash-count" aria-live="polite"></output><button class="btn primary" id="lash-next" type="button">Далее</button></div></div></div></section><section class="reviews" id="reviews"><div class="shell"><div class="eyebrow">Отзывы</div><h2>Слова наших клиенток</h2><p>Реальные отзывы клиенток Natali Lash. Листайте книгу и нажимайте на отзыв, чтобы прочитать его целиком.</p><div class="book-wrap ornate"><div class="book" id="review-book" aria-label="Книга отзывов"></div><div class="book-controls"><button class="btn" id="review-prev" type="button">Назад</button><output id="review-count" aria-live="polite"></output><button class="btn primary" id="review-next" type="button">Далее</button></div></div></div></section>
+    </div>
+<section class="promotions" id="promotions"><div class="shell"><div class="eyebrow">Приятные поводы</div><h2>Красота с подарком</h2><div class="promo-grid compact-promos">
+<article class="promo-card"><button class="promotion-image" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/promo-friend-20261013.jpg" aria-label="Увеличить условия акции «Приведи подружку»"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/promo-friend-20261013.jpg" alt="Приведи подружку и получи скидку 30% на следующее любое наращивание после её процедуры. Подруга записывается по вашей рекомендации и указывает вас как рекомендателя" width="1024" height="1024" loading="lazy"></button><div class="messenger-actions"><a class="btn" href="https://max.ru/u/f9LHodD0cOI1j8yxxjISJa37qxcUz1h-FOtINC5Y3MGrLjmydH1lLyd_qmQ" target="_blank" rel="noopener noreferrer">Условия акции в MAX</a><a class="btn" href="https://t.me/nataliayrevna1911" target="_blank" rel="noopener noreferrer">Telegram</a></div></article>
+<article class="promo-card"><button class="promotion-image" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/promo-birthday-20261013-corrected.jpg" aria-label="Увеличить условия подарка имениннице"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/promo-birthday-20261013-corrected.jpg" alt="Подарок имениннице: подписчицы ВКонтакте получают в личных сообщениях именной сертификат на скидку 30% на наращивание ресниц в день рождения. Дата рождения должна быть открыта. Сертификат действует один раз в течение месяца после получения" width="1024" height="1024" loading="lazy"></button><a class="btn" href="https://vk.ru/natalilashvrn" target="_blank" rel="noopener noreferrer">ВКонтакте</a></article>
+<article class="promo-card"><button class="promotion-image" type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/promo-model-20261013.jpg" aria-label="Увеличить предложение для моделей"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/promo-model-20261013.jpg" alt="Ищу модель для портфолио на определённые схемы. Оплата за материалы — 1 000 рублей. Требуется согласие на фото и видеосъёмку. Подробности в личных сообщениях" width="1024" height="1024" loading="lazy"></button><div class="messenger-actions"><a class="btn" href="https://max.ru/u/f9LHodD0cOI1j8yxxjISJa37qxcUz1h-FOtINC5Y3MGrLjmydH1lLyd_qmQ" target="_blank" rel="noopener noreferrer">Стать моделью · MAX</a><a class="btn" href="https://t.me/nataliayrevna1911" target="_blank" rel="noopener noreferrer">Telegram</a></div></article>
+</div><p class="promo-scroll-hint">Листайте акции вправо → Нажмите на картинку, чтобы прочитать условия.</p></div></section>
+
+
+<section class="visit-section" id="contacts"><div class="shell"><div class="visit-heading"><div><div class="eyebrow">Комфорт и адрес</div><h2>Жду вас в Северном</h2></div><div class="messenger-actions"><a class="btn" href="https://max.ru/u/f9LHodD0cOI1j8yxxjISJa37qxcUz1h-FOtINC5Y3MGrLjmydH1lLyd_qmQ" target="_blank" rel="noopener noreferrer">Написать в MAX</a><a class="btn" href="https://t.me/nataliayrevna1911" target="_blank" rel="noopener noreferrer">Telegram</a></div></div>
+<div class="visit-grid"><div class="studio-compact" id="studio"><h3>Спокойно. Чисто. Удобно.</h3><p>Мягкое кресло полностью раскладывается — можно удобно расположиться и расслабиться во время процедуры.</p><div class="chair-pair"><button type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/studio-upright.webp" aria-label="Увеличить фото кресла"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/studio-upright.webp" alt="Кресло мастера в обычном положении" loading="lazy"></button><button type="button" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/studio-reclined.webp" aria-label="Увеличить фото разложенного кресла"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/studio-reclined.webp" alt="Кресло мастера в разложенном положении" loading="lazy"></button></div></div>
+<div class="directions-compact"><h3>Воронеж, ул. Владимира Невского, 32</h3><p>Остановка «Улица 60-летия ВЛКСМ». Вход со стороны двора.</p><button type="button" class="map-image" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/map.jpg" aria-label="Увеличить схему проезда"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/map.jpg" alt="Схема проезда к Natali Lash на улице Владимира Невского, 32" loading="lazy"></button><p class="fine">Ориентиры: магазин «Линия», школа № 99.</p></div></div></div></section>
+
+    <section class="online-booking" id="online-booking" aria-labelledby="online-booking-title"><div class="shell">
+<div class="booking-intro"><div class="eyebrow">Онлайн-запись</div><h2 id="online-booking-title">Выберите время для нового взгляда</h2><p>Выберите дату и свободное время, затем заполните форму записи.</p><p class="booking-note">Календарь показывает время в выбранном часовом поясе. Для Воронежа выберите Europe/Moscow.</p></div>
+<form class="consent-form" id="booking-consents"><fieldset><legend>Вы уже были у Наталии?</legend><div class="client-options"><label><input type="radio" name="client-status" value="new" checked required> Первый визит</label><label><input type="radio" name="client-status" value="returning"> Уже была у Наталии</label></div></fieldset><fieldset><legend>Согласия перед записью</legend>
+  <label class="consent-row"><input type="checkbox" id="consent-personal" name="personal" required><span>Я даю Клименко Наталии Юрьевне, ИНН 480402314915, <a href="/consent" target="_blank" rel="noopener">согласие на обработку персональных данных</a> для записи и связи по моей заявке.</span></label>
+  <label class="consent-row"><input type="checkbox" id="consent-marketing" name="marketing"><span>Я хочу получать сообщения об акциях и предложениях Natali Lash и даю <a href="/marketing-consent" target="_blank" rel="noopener">согласие на рекламную рассылку</a> от Клименко Наталии Юрьевны. Необязательно.</span></label>
+  </fieldset><p class="fine">Реклама — только по вашему выбору. Отказ не влияет на возможность записаться. С <a href="/rules">правилами визита</a> и <a href="/privacy">политикой обработки данных</a> можно ознакомиться отдельно.</p><button class="btn primary" type="submit" id="open-booking" disabled>Перейти к выбору времени</button></form>
+  <div class="consent-summary" id="consent-summary" hidden><p id="consent-summary-text" role="status"></p><button class="consent-edit" type="button" id="edit-consents">Изменить выбор</button></div>
+  <noscript><p>Для календаря и выбора согласий включите JavaScript. Также можно <a href="https://max.ru/u/f9LHodD0cOI1j8yxxjISJa37qxcUz1h-FOtINC5Y3MGrLjmydH1lLyd_qmQ" target="_blank" rel="noopener noreferrer">написать Наталии в Макс</a> или <a href="https://t.me/nataliayrevna1911" target="_blank" rel="noopener noreferrer">в Telegram</a> и согласовать запись лично.</p></noscript>
+<div class="natali-calendar" hidden id="natali-booking-calendar" data-booking-calendar></div>
+<div class="booking-fallback" id="booking-fallback" hidden><a class="btn primary" href="https://cal.com/nklimenk26/наращивание-ресниц-наталия" target="_blank" rel="noopener noreferrer">Открыть календарь записи</a><span class="booking-note" data-booking-status role="status">Если календарь не отображается, откройте его по ссылке.</span></div>
+<p class="booking-note">Запись оформляется через Cal.com. Укажите имя и контакт для подтверждения. Ваш выбор согласий передаётся в сервис вместе с записью. <a href="/privacy">Политика обработки персональных данных</a>.</p>
+</div></section>
+<div class="shell booking-links"><span>Вопросы по записи:</span><a href="https://max.ru/u/f9LHodD0cOI1j8yxxjISJa37qxcUz1h-FOtINC5Y3MGrLjmydH1lLyd_qmQ" target="_blank" rel="noopener noreferrer">Написать в MAX</a><a href="https://vk.ru/natalilashvrn" target="_blank" rel="noopener noreferrer">ВКонтакте</a><a href="https://max.ru/join/6l9EErdelckEtlILcpQEBAsjtUbzo99cJMkeSq01RT4" target="_blank" rel="noopener noreferrer">Канал в MAX</a><a href="https://t.me/nataliayrevna1911" target="_blank" rel="noopener noreferrer">Telegram</a><a href="/rules">Правила визита</a></div>
+  </main>
+
+  <footer><div class="shell foot"><a class="brand" href="#top"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/logo-natali-20261013.jpg" alt="Natali Lash"><span>NATALI LASH</span></a><div><strong>Клименко Наталия Юрьевна</strong><br><span>ИНН 480402314915</span><br><span>Плательщик налога на профессиональный доход</span></div><div class="foot-links"><a href="/privacy">Политика обработки данных</a><a href="/legal">Правовая информация</a></div><span>© 2026</span></div><div class="shell footer-documents"><div class="foot-links"><a href="/rules">Правила посещения</a><a href="/consent">Согласие на обработку персональных данных</a><a href="/marketing-consent">Согласие на рекламную рассылку</a></div><p>Согласия выбираются отдельно перед открытием календаря. Рассылка об акциях добровольна. Согласие на публикацию фото и видео запрашивается отдельно; запись на процедуру его не заменяет.</p></div></footer>
+  <div class="mobile-bar"><a class="btn" href="#prices">Прайс</a><a class="btn primary" href="#online-booking">Записаться</a></div>
+
+<dialog id="image-view"><button class="btn close-view" type="button">Закрыть</button><img alt=""><div class="image-nav" id="image-nav" hidden><button class="btn" id="image-prev" type="button" aria-label="Предыдущая работа">←</button><output id="image-count" aria-live="polite"></output><button class="btn" id="image-next" type="button" aria-label="Следующая работа">→</button></div></dialog><script>(() => {
+
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}}),{threshold:.12});
+    document.querySelectorAll('[data-reveal]').forEach(el=>observer.observe(el));
+
+function setupBook(prefix,images,label){let page=0;const book=document.getElementById(prefix+'-book'),prev=document.getElementById(prefix+'-prev'),next=document.getElementById(prefix+'-next'),count=document.getElementById(prefix+'-count');const mobile=matchMedia('(max-width:560px)');function render(){const step=mobile.matches?1:2;page=Math.min(page,Math.floor((images.length-1)/step)*step);book.innerHTML=images.slice(page,page+step).map((n,i)=>`<figure class="book-page" tabindex="0" role="button" aria-label="Увеличить: ${label} ${page+i+1}" data-full="https://storozenko-digital.github.io/natali-lash-voronezh/assets/${n}"><span class="book-image"><span class="book-image-inner${n==='lash-172224.jpg'?' neon-sample':''}"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/${n}" alt="${label} ${page+i+1}" loading="lazy" decoding="async"></span></span><figcaption>${label} ${page+i+1}</figcaption></figure>`).join('');count.textContent=`${page+1}${step===2&&page+1<images.length?'–'+Math.min(page+step,images.length):''} / ${images.length}`;prev.disabled=page===0;next.disabled=page+step>=images.length;}function move(direction){page+=direction*(mobile.matches?1:2);book.classList.remove('turning');void book.offsetWidth;book.classList.add('turning');render()}prev.onclick=()=>move(-1);next.onclick=()=>move(1);mobile.addEventListener('change',()=>{page=0;render()});let touchX=0;book.addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});book.addEventListener('touchend',e=>{const delta=e.changedTouches[0].clientX-touchX;if(Math.abs(delta)>65){if(delta<0&&!next.disabled)move(1);if(delta>0&&!prev.disabled)move(-1)}},{passive:true});book.addEventListener('keydown',e=>{if(e.key==='ArrowRight'&&!next.disabled){e.preventDefault();move(1)}if(e.key==='ArrowLeft'&&!prev.disabled){e.preventDefault();move(-1)}});render();}
+setupBook('lash',["lash-172220.jpg", "lash-172224.jpg", "lash-172229.jpg", "lash-172233.jpg", "lash-172241.jpg", "lash-172249.jpg", "lash-172254.jpg", "lash-172302.jpg", "lash-172309.jpg", "lash-172314.jpg", "lash-172320.jpg", "lash-172330.jpg", "lash-172336.jpg", "lash-172342.jpg", "lash-172348.jpg", "lash-172355.jpg", "lash-172401.jpg", "lash-172407.jpg", "lash-172507.jpg", "lash-172513.jpg", "lash-172519.jpg", "lash-172525.jpg", "lash-172531.jpg", "lash-172538.jpg", "lash-172546.jpg", "lash-172553.jpg", "lash-172559.jpg", "lash-172606.jpg", "lash-172614.jpg", "lash-172622.jpg", "lash-172640.jpg", "lash-172646.jpg", "lash-172652.jpg", "lash-172658.jpg", "lash-172704.jpg", "lash-172818.jpg"],'Образец');setupBook('review',["review-20261013-anastasia.jpg", "review-20261006-204755.jpg", "review-20261006-204801.jpg", "review-20261006-204810.jpg", "review-20261006-204820.jpg", "review-20261006-204829.jpg", "review-20261006-204840.jpg", "review-20261006-204848.jpg", "review-20261006-204856.jpg", "review-20261006-204911.jpg", "review-20261006-204920.jpg", "review-20261006-204926.jpg", "review-20261006-204933.jpg", "review-20261006-204940.jpg", "review-20261006-204949.jpg", "review-20261006-204957.jpg", "review-20261006-205003.jpg", "review-20261006-205009.jpg", "review-20261006-205015.jpg", "review-20261006-205021.jpg", "review-20261006-205039.jpg", "review-20261006-205045.jpg", "review-20261006-205050.jpg", "review-20261006-205056.jpg", "review-20261006-205102.jpg", "review-20261006-205108.jpg", "review-20261006-205116.jpg", "review-20261006-205122.jpg", "review-20261006-205131.jpg", "review-20261006-205139.jpg"],'Отзыв');
+const view=document.getElementById('image-view');
+const workImages=Array.from(document.querySelectorAll('#works-track [data-full]'));
+const imageNav=document.getElementById('image-nav'),imagePrev=document.getElementById('image-prev'),imageNext=document.getElementById('image-next'),imageCount=document.getElementById('image-count');
+let imageIndex=-1;
+function openImage(el){imageIndex=workImages.indexOf(el);const im=view.querySelector('img');im.src=el.dataset.full;im.alt=el.querySelector('img').alt;imageNav.hidden=imageIndex<0;if(imageIndex>=0){imagePrev.disabled=imageIndex===0;imageNext.disabled=imageIndex===workImages.length-1;imageCount.textContent=`${imageIndex+1} / ${workImages.length}`;}if(!view.open)view.showModal();}
+imagePrev.onclick=()=>{if(imageIndex>0)openImage(workImages[imageIndex-1])};imageNext.onclick=()=>{if(imageIndex>=0&&imageIndex<workImages.length-1)openImage(workImages[imageIndex+1])};
+document.addEventListener('click',e=>{const el=e.target.closest('[data-full]');if(el)openImage(el)});
+document.addEventListener('keydown',e=>{if(view.open&&imageIndex>=0&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();if(e.key==='ArrowLeft')imagePrev.click();else imageNext.click();return;}const el=e.target.closest('[data-full]');if(el&&el.tagName!=='BUTTON'&&(e.key==='Enter'||e.key===' ')){e.preventDefault();openImage(el)}});
+view.querySelector('.close-view').onclick=()=>view.close();view.addEventListener('click',e=>{if(e.target===view)view.close()});
+
+})();</script>
+<script>(() => {
+// Native horizontal scrolling also works without JavaScript.
+(() => {
+  const track = document.getElementById('works-track');
+  if (!track) return;
+  const photos = Array.from(track.querySelectorAll('.work-photo'));
+  const previous = document.getElementById('works-prev');
+  const next = document.getElementById('works-next');
+  const count = document.getElementById('works-count');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function update() {
+    const left = track.scrollLeft;
+    const right = left + track.clientWidth;
+    const visible = photos.map((photo, index) => ({ photo, index }))
+      .filter(({ photo }) => photo.offsetLeft + photo.offsetWidth > left + 8 && photo.offsetLeft < right - 8);
+    if (visible.length) {
+      const first = visible[0].index + 1;
+      const last = visible[visible.length - 1].index + 1;
+      count.textContent = `${first}${last > first ? '–' + last : ''} / ${photos.length}`;
+    }
+    previous.disabled = left <= 2;
+    next.disabled = left + track.clientWidth >= track.scrollWidth - 2;
+  }
+
+  function move(direction) {
+    const stride = photos.length > 1 ? photos[1].offsetLeft - photos[0].offsetLeft : track.clientWidth;
+    track.scrollBy({ left: direction * stride, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+  }
+  previous.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  track.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      move(event.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+  let scheduled = false;
+  track.addEventListener('scroll', () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(() => { scheduled = false; update(); });
+  }, { passive: true });
+  if ('ResizeObserver' in window) new ResizeObserver(update).observe(track);
+  else window.addEventListener('resize', update);
+  update();
+})();
+
+})();</script>
+<script>(() => {
+// Cal.com stores bookings and manages availability; this site does not reserve slots itself.
+(() => {
+  const calendar = document.querySelector('[data-booking-calendar]');
+  const form = document.getElementById('booking-consents');
+  if (!calendar || !form) return;
+  const personal = document.getElementById('consent-personal');
+  const marketing = document.getElementById('consent-marketing');
+  const openButton = document.getElementById('open-booking');
+  const summary = document.getElementById('consent-summary');
+  const summaryText = document.getElementById('consent-summary-text');
+  const fallback = document.getElementById('booking-fallback');
+  const externalLink = fallback.querySelector('a');
+  const originalUrl = externalLink.href;
+  let attempt = 0;
+
+  (function (C, A, L) {
+    const p = (api, args) => api.q.push(args);
+    const d = C.document;
+    C.Cal = C.Cal || function () {
+      const cal = C.Cal;
+      const args = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        const script = d.createElement('script');
+        script.src = A;
+        script.async = true;
+        script.onerror = () => {
+          const status = document.querySelector('[data-booking-status]');
+          if (status) status.textContent = 'Календарь не загрузился. Откройте запись по ссылке ниже.';
+        };
+        d.head.appendChild(script);
+        cal.loaded = true;
+      }
+      if (args[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = args[1];
+        api.q = api.q || [];
+        if (typeof namespace === 'string') {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], args);
+          p(cal, ['initNamespace', namespace]);
+        } else p(cal, args);
+        return;
+      }
+      p(cal, args);
+    };
+  })(window, 'https://app.cal.com/embed/embed.js', 'init');
+
+  // No embed request before the visitor's explicit choice. Metadata is
+  // supported by Cal.com and accompanies the completed booking, not a
+  // separate client-side "consent saved" record.
+  personal.addEventListener('change', () => { openButton.disabled = !personal.checked; });
+  openButton.disabled = !personal.checked;
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!personal.checked || !form.reportValidity()) return;
+    const clientStatus = form.querySelector('[name="client-status"]:checked').value;
+    const clientLabel = clientStatus === 'new' ? 'Первый визит' : 'Повторный визит';
+    const selectedAt = new Date().toISOString();
+    const namespace = `nataliLash${++attempt}`;
+    const config = {
+      layout: 'month_view', theme: 'light', locale: 'ru',
+      notes: clientLabel,
+      'metadata[clientStatus]': clientStatus,
+      'metadata[personalDataConsent]': 'accepted',
+      'metadata[personalDataConsentVersion]': '2026-10-08',
+      'metadata[consentSelectedAt]': selectedAt,
+      'metadata[marketingConsent]': marketing.checked ? 'accepted' : 'declined',
+      'metadata[marketingConsentVersion]': '2026-10-08'
+    };
+    const url = new URL(originalUrl);
+    Object.entries(config).filter(([key]) => key.startsWith('metadata[') || key === 'notes')
+      .forEach(([key, value]) => url.searchParams.set(key, value));
+    externalLink.href = url.href;
+    form.hidden = true;
+    summaryText.textContent = `${clientLabel}. Обработка данных для записи: согласие дано. Рекламные сообщения: ${marketing.checked ? 'согласие дано' : 'согласие не дано'}.`;
+    summary.hidden = false;
+    calendar.hidden = false;
+    fallback.hidden = false;
+    Cal('init', namespace, { origin: 'https://cal.com' });
+    Cal.ns[namespace]('inline', {
+      elementOrSelector: '#natali-booking-calendar',
+      calLink: 'nklimenk26/наращивание-ресниц-наталия', config
+    });
+    Cal.ns[namespace]('ui', {
+      theme: 'light',
+      cssVarsPerTheme: { light: { 'cal-brand': '#bf3d7d' } },
+      hideEventTypeDetails: false,
+      layout: 'month_view'
+    });
+  });
+  document.getElementById('edit-consents').addEventListener('click', () => {
+    calendar.replaceChildren();
+    calendar.hidden = true;
+    fallback.hidden = true;
+    summary.hidden = true;
+    form.hidden = false;
+    externalLink.href = originalUrl;
+    openButton.disabled = !personal.checked;
+    personal.focus();
+  });
+})();
+
+})();</script>
+</div>

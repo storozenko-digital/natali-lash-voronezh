@@ -1,0 +1,39 @@
+<style>
+#natali-tilda-consent{position:relative;isolation:isolate;text-align:left}
+#natali-tilda-consent p{margin:1em 0}
+#natali-tilda-consent{--ink:#181117;--paper:#fffafc;--pink:#e765a4;--pink-deep:#bf3d7d;--muted:#736872;--line:rgba(24,17,23,.12)}
+#natali-tilda-consent,#natali-tilda-consent *{box-sizing:border-box}
+#natali-tilda-consent{scroll-behavior:smooth}
+#natali-tilda-consent{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 Arial,Helvetica,sans-serif}
+#natali-tilda-consent a{color:var(--pink-deep)}
+#natali-tilda-consent .shell{width:min(860px,calc(100% - 32px));margin:auto}
+#natali-tilda-consent header{padding:22px 0;border-bottom:1px solid var(--line);background:#fff}
+#natali-tilda-consent .brand{display:inline-flex;align-items:center;text-decoration:none}
+#natali-tilda-consent .brand img{display:block;width:156px;height:54px;object-fit:cover;object-position:center;border-radius:7px}
+#natali-tilda-consent main{padding:72px 0 90px}
+#natali-tilda-consent .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:700;color:var(--pink-deep)}
+#natali-tilda-consent h1,#natali-tilda-consent h2{font-family:Georgia,"Times New Roman",serif;line-height:1.08}
+#natali-tilda-consent h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:12px 0 24px}
+#natali-tilda-consent h2{font-size:1.35rem;margin:34px 0 12px}
+#natali-tilda-consent p,#natali-tilda-consent li{color:#4f454d}
+#natali-tilda-consent .lead{font-size:1.08rem;color:var(--muted);max-width:720px}
+#natali-tilda-consent .card{margin:30px 0;padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff}
+#natali-tilda-consent ul{padding-left:22px}
+#natali-tilda-consent .back{display:inline-flex;margin-top:34px;padding:12px 20px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700}
+#natali-tilda-consent footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.86rem}
+#natali-tilda-consent .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:560px){#natali-tilda-consent main{padding:50px 0 70px}
+#natali-tilda-consent .brand img{width:118px;height:44px}
+#natali-tilda-consent .card{padding:20px}}
+#natali-tilda-consent .brand img{width:40px;height:70px;object-fit:contain;border-radius:0}
+#natali-tilda-consent h1{overflow-wrap:anywhere}
+@media(max-width:560px){#natali-tilda-consent .brand img{width:30px;height:52px}}
+
+
+</style>
+<div id="natali-tilda-consent"><header><div class="shell"><a class="brand" href="/"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/logo-natali-20261013.jpg" alt="Natali Lash"></a></div></header><main><article class="shell"><div class="eyebrow">Natali Lash</div><h1>Согласие на обработку персональных данных</h1><p class="lead">Отдельное согласие для записи на услуги Natali Lash. Редакция от 8 октября 2026 года.</p><div class="card"><strong>Оператор:</strong> Клименко Наталия Юрьевна, ИНН 480402314915.<br><strong>Место оказания услуг:</strong> г. Воронеж, ул. Владимира Невского, 32.<br><strong>Связь:</strong> <a href="https://max.ru/u/f9LHodD0cOI1j8yxxjISJa37qxcUz1h-FOtINC5Y3MGrLjmydH1lLyd_qmQ" target="_blank" rel="noopener noreferrer">личные сообщения в Макс</a> или <a href="https://vk.ru/natalilashvrn" target="_blank" rel="noopener noreferrer">ВКонтакте</a>.</div>
+<p>Отмечая поле согласия перед открытием календаря, я свободно и добровольно разрешаю оператору обработку сообщённых мной сведений для ответа на обращение, организации записи, связи по визиту и оказания согласованной услуги.</p>
+<h2>Данные и действия</h2><p>Согласие охватывает имя, контактные сведения (электронную почту, телефон или профиль, если я их сообщаю), услугу, дату и время визита, содержание обращения и отметки о моём выборе согласий. Возможны получение, запись, хранение, уточнение, использование и удаление этих данных с применением средств автоматизации или без них.</p>
+<h2>Сервис записи</h2><p>Я уведомлён(а), что календарь и форма бронирования предоставлены Cal.com. Имя, электронная почта, дата и время, добровольные примечания и отметки согласий передаются в этот сервис для создания бронирования и подтверждения. Cal.com обрабатывает данные по своей <a href="https://cal.com/privacy" target="_blank" rel="noopener noreferrer">политике</a>. Подробности об используемых сервисах приведены в <a href="/privacy">политике Natali Lash</a>. Медицинские, паспортные и другие избыточные сведения в форму записи вводить не следует.</p>
+<h2>Срок и отзыв</h2><p>Согласие действует до достижения указанных целей или его отзыва. Отозвать его, запросить уточнение или удаление данных можно сообщением оператору через указанные выше контакты. При наличии другого законного основания необходимые сведения могут обрабатываться в установленном законом объёме и после отзыва.</p>
+<h2>Отдельные решения</h2><p>Это согласие не разрешает рекламную рассылку или публикацию фото и видео. Для них требуется отдельное добровольное решение. Если вы предпочитаете другой способ записи, свяжитесь с Наталией лично.</p><a class="back" href="/">Вернуться на сайт</a></article></main><footer><div class="shell foot"><span>Клименко Наталия Юрьевна · ИНН 480402314915</span><a href="/privacy">Политика обработки данных</a></div></footer></div>

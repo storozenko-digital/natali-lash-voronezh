@@ -1,0 +1,38 @@
+<style>
+#natali-tilda-marketing-consent{position:relative;isolation:isolate;text-align:left}
+#natali-tilda-marketing-consent p{margin:1em 0}
+#natali-tilda-marketing-consent{--ink:#181117;--paper:#fffafc;--pink:#e765a4;--pink-deep:#bf3d7d;--muted:#736872;--line:rgba(24,17,23,.12)}
+#natali-tilda-marketing-consent,#natali-tilda-marketing-consent *{box-sizing:border-box}
+#natali-tilda-marketing-consent{scroll-behavior:smooth}
+#natali-tilda-marketing-consent{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 Arial,Helvetica,sans-serif}
+#natali-tilda-marketing-consent a{color:var(--pink-deep)}
+#natali-tilda-marketing-consent .shell{width:min(860px,calc(100% - 32px));margin:auto}
+#natali-tilda-marketing-consent header{padding:22px 0;border-bottom:1px solid var(--line);background:#fff}
+#natali-tilda-marketing-consent .brand{display:inline-flex;align-items:center;text-decoration:none}
+#natali-tilda-marketing-consent .brand img{display:block;width:156px;height:54px;object-fit:cover;object-position:center;border-radius:7px}
+#natali-tilda-marketing-consent main{padding:72px 0 90px}
+#natali-tilda-marketing-consent .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:700;color:var(--pink-deep)}
+#natali-tilda-marketing-consent h1,#natali-tilda-marketing-consent h2{font-family:Georgia,"Times New Roman",serif;line-height:1.08}
+#natali-tilda-marketing-consent h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:12px 0 24px}
+#natali-tilda-marketing-consent h2{font-size:1.35rem;margin:34px 0 12px}
+#natali-tilda-marketing-consent p,#natali-tilda-marketing-consent li{color:#4f454d}
+#natali-tilda-marketing-consent .lead{font-size:1.08rem;color:var(--muted);max-width:720px}
+#natali-tilda-marketing-consent .card{margin:30px 0;padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff}
+#natali-tilda-marketing-consent ul{padding-left:22px}
+#natali-tilda-marketing-consent .back{display:inline-flex;margin-top:34px;padding:12px 20px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700}
+#natali-tilda-marketing-consent footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.86rem}
+#natali-tilda-marketing-consent .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:560px){#natali-tilda-marketing-consent main{padding:50px 0 70px}
+#natali-tilda-marketing-consent .brand img{width:118px;height:44px}
+#natali-tilda-marketing-consent .card{padding:20px}}
+#natali-tilda-marketing-consent .brand img{width:40px;height:70px;object-fit:contain;border-radius:0}
+#natali-tilda-marketing-consent h1{overflow-wrap:anywhere}
+@media(max-width:560px){#natali-tilda-marketing-consent .brand img{width:30px;height:52px}}
+
+
+</style>
+<div id="natali-tilda-marketing-consent"><header><div class="shell"><a class="brand" href="/"><img src="https://storozenko-digital.github.io/natali-lash-voronezh/assets/logo-natali-20261013.jpg" alt="Natali Lash"></a></div></header><main><article class="shell"><div class="eyebrow">Natali Lash</div><h1>Согласие на рекламную рассылку</h1><p class="lead">Необязательное согласие. Редакция от 8 октября 2026 года.</p><div class="card"><strong>Оператор:</strong> Клименко Наталия Юрьевна, ИНН 480402314915.<br><strong>Место оказания услуг:</strong> г. Воронеж, ул. Владимира Невского, 32.<br><strong>Связь:</strong> <a href="https://max.ru/u/f9LHodD0cOI1j8yxxjISJa37qxcUz1h-FOtINC5Y3MGrLjmydH1lLyd_qmQ" target="_blank" rel="noopener noreferrer">личные сообщения в Макс</a> или <a href="https://vk.ru/natalilashvrn" target="_blank" rel="noopener noreferrer">ВКонтакте</a>.</div>
+<p>Отмечая отдельное поле рекламного согласия перед открытием календаря, я разрешаю Клименко Наталии Юрьевне направлять мне сообщения об акциях, услугах и предложениях Natali Lash по сообщённым мной контактам: электронной почте, телефону или в личных сообщениях, если я предоставляю соответствующий контакт.</p>
+<h2>Добровольность</h2><p>Поле изначально не отмечено. Отказ не влияет на запись, цену и возможность получить услугу. Подтверждения и напоминания о согласованном визите являются сообщениями по записи и не означают согласия на рекламу.</p>
+<h2>Данные и срок</h2><p>Для рассылки могут использоваться имя, сообщённый контакт и отметка о согласии. Согласие действует до отзыва. Контакты используются для предложений Natali Lash; согласие не разрешает передачу контактов посторонним рекламодателям.</p>
+<h2>Как отказаться</h2><p>В любой момент напишите Наталии «Не хочу получать рекламу» в Макс или ВКонтакте. После получения отказа рекламные сообщения прекращаются. Отзыв согласия на рекламу не отменяет вашу запись.</p><a class="back" href="/">Вернуться на сайт</a></article></main><footer><div class="shell foot"><span>Клименко Наталия Юрьевна · ИНН 480402314915</span><a href="/privacy">Политика обработки данных</a></div></footer></div>
